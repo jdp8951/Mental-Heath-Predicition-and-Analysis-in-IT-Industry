@@ -24,11 +24,11 @@ We utilized datasets from Open Sourcing Mental Illness (OSMI) surveys conducted 
 - Exploratory data analysis to identify trends and patterns.
 - Implementation of machine learning models to predict mental health outcomes.
 - Models :
-    -Logistic Regression: Simple, interpretable, used for binary outcomes.
-    -Random Forest: Ensemble method using multiple decision trees for high accuracy.
-    -K-Nearest Neighbors (KNN): Non-parametric, groups data points by proximity.
-    -Gradient Boosting Classifier: Sequential model boosting to reduce errors.
-    -XGBoost: Optimized gradient boosting technique for superior performance.
+-Logistic Regression: Simple, interpretable, used for binary outcomes.
+-Random Forest: Ensemble method using multiple decision trees for high accuracy.
+-K-Nearest Neighbors (KNN): Non-parametric, groups data points by proximity.
+-Gradient Boosting Classifier: Sequential model boosting to reduce errors.
+-XGBoost: Optimized gradient boosting technique for superior performance.
 
 ## Results
 ### Model Performance
