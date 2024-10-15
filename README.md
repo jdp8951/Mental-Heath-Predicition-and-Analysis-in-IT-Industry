@@ -45,13 +45,13 @@ cd mental-health-in-tech
 pip install -r requirements.txt
 ```
 
-##Usage
+###Usage
 [Provide instructions on how to run your project or any scripts]
 
-Contributing
+###Contributing
 Contributions are welcome! Please feel free to submit a pull request or open an issue.
 
-License
+###License
 
 ### Customization Tips
 - **Replace placeholders**: Update the project title, description, and other placeholders with your actual project details.
