@@ -20,17 +20,31 @@ This project explores the mental health challenges faced by individuals in the t
 The tech industry is known for its fast-paced environment, which can lead to increased stress and mental health issues among employees. This project aims to shed light on these challenges and promote awareness and solutions.
 
 ## Dataset
-We utilize the following datasets:
-- **`prepro_clean_mental_health.csv`**: Contains 1,200 rows of data.
-- **`expanded_mental_health.csv`**: Contains 8,500 rows of data.
+We utilized datasets from Open Sourcing Mental Illness (OSMI) surveys conducted between 2017 and 2021. These datasets include responses from IT professionals, focusing on demographics, work factors, and mental health indicators. Key preprocessing steps included renaming columns, handling missing data, and feature scaling.
+- **`mental_health.csv`**: Contains 8,500 rows of data.
 
 ## Methodology
 - Data cleaning and preprocessing.
 - Exploratory data analysis to identify trends and patterns.
 - Implementation of machine learning models to predict mental health outcomes.
+- Models used :
+    -Logistic Regression: Simple, interpretable, used for binary outcomes.
+    -Random Forest: Ensemble method using multiple decision trees for high accuracy.
+    -K-Nearest Neighbors (KNN): Non-parametric, groups data points by proximity.
+    -Gradient Boosting Classifier: Sequential model boosting to reduce errors.
+    -XGBoost: Optimized gradient boosting technique for superior performance.
 
 ## Results
-[Include a brief summary of key findings or visualizations here]
+### Model Performance
+
+| Model               | Precision | Recall  | F1 Score | Accuracy |
+|---------------------|-----------|---------|----------|----------|
+| K-Nearest Neighbor  | 0.95      | 0.98    | 0.97     | 97.67%   |
+| Logistic Regression | 0.68      | 0.52    | 0.59     | 74.49%   |
+| XGBoost             | 0.84      | 0.69    | 0.76     | 84.52%   |
+| Random Forest       | 1.00      | 0.98    | 0.99     | 99.35%   |
+| Gradient Boosting   | 0.86      | 0.70    | 0.77     | 85.39%   |
+
 
 ## Conclusion
 This project highlights the importance of addressing mental health in the tech industry and provides insights into the factors that contribute to mental health challenges.
