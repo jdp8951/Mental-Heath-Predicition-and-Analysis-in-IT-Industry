@@ -23,7 +23,7 @@ We utilized datasets from Open Sourcing Mental Illness (OSMI) surveys conducted 
 - Data cleaning and preprocessing.
 - Exploratory data analysis to identify trends and patterns.
 - Implementation of machine learning models to predict mental health outcomes.
-- Models :
+- Models Used:
 Logistic Regression: Simple, interpretable, used for binary outcomes, 
 Random Forest: Ensemble method using multiple decision trees for high accuracy, 
 K-Nearest Neighbors (KNN): Non-parametric, groups data points by proximity, 
