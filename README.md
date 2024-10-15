@@ -1,7 +1,5 @@
 # Mental-Heath-Predicition-and-Analysis-in-IT-Industry
 
-# Mental Health in the Tech Industry
-
 ## Project Overview
 This project explores the mental health challenges faced by individuals in the tech industry. Using datasets, we aim to analyze various factors contributing to mental health issues and identify potential solutions to improve overall well-being in this sector.
 
@@ -46,8 +44,12 @@ We utilized datasets from Open Sourcing Mental Illness (OSMI) surveys conducted 
 | Gradient Boosting   | 0.86      | 0.70    | 0.77     | 85.39%   |
 
 
-## Conclusion
-This project highlights the importance of addressing mental health in the tech industry and provides insights into the factors that contribute to mental health challenges.
+
+### Conclusion
+The research demonstrated that machine learning models, particularly ensemble methods, are effective in predicting mental health issues in the tech industry. The Random Forest model emerged as the most reliable, achieving the highest accuracy, precision, recall, and F1-score. KNN also performed well, while models like XGBoost and Gradient Boosting, though competitive, fell slightly behind Random Forest in robustness.
+
+Logistic Regression struggled with the dataset's complexity, indicating that more advanced methods are needed to capture non-linear relationships in mental health prediction. This study highlights the importance of selecting appropriate machine learning models for mental health data, with Random Forest proving to be the most successful. Future work could explore additional ensemble methods or deep learning techniques to further improve predictive accuracy and support mental health interventions in the tech sector.
+
 
 ## Installation
 To get started with this project, clone the repository and install the necessary dependencies.
