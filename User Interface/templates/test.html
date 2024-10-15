@@ -1,0 +1,1178 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Assessment</title>
+    <!-- <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #6b6bad, #4b4b7a);
+            color: #333;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            font-size: 2.5rem;
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        form {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #4b4b7a;
+        }
+
+        .form-group select, .form-group input[type="text"] {
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+            background-color: #f5f5f5;
+            color: #333;
+            transition: border-color 0.3s;
+        }
+
+        .form-group select:focus, .form-group input[type="text"]:focus {
+            border-color: #4b4b7a;
+            outline: none;
+        }
+
+        .submit-btn {
+            padding: 12px 30px;
+            background-color: #4b4b7a;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s, transform 0.2s;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .submit-btn:hover {
+            background-color: #535380;
+            transform: translateY(-3px);
+        }
+
+        .submit-btn:active {
+            transform: translateY(1px);
+        }
+    </style> -->
+</head>
+<body>
+
+    <h1>Mental Health Assessment</h1>
+
+    <form onsubmit="submitForm(event)">
+        <!-- Question 1 -->
+        <div class="form-group">
+            <label>Are you self-employed?</label>
+            <select name="q1" required>
+                <option value="">--Select--</option>
+                <option value="Yes">1 (Yes)</option>
+                <option value="NO">0 (No)</option>
+            </select>
+            <!-- <label for="dropdown1">Select your stress level:</label>
+            <select id="dropdown1" name="stress_level1" required>
+                <option value="">--Select--</option>
+                <option value="Low">Low</option>
+                <option value="Moderate">Moderate</option>
+                <option value="High">High</option>
+            </select> -->
+        </div>
+
+        <!-- Question 2 -->
+        <div class="form-group">
+            <label>How many employees does your company or organization have?</label>
+            <select name="q2" required>
+                <option value="">--Select--</option>
+                <option value="26-100">26-100</option>
+                <option value="More than 1000">More than 1000</option>
+                <option value="100-500">100-500</option>
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <!-- Question 3 -->
+        <div class="form-group">
+            <label>Is your employer primarily a tech company/organization?</label>
+            <select name="q3" required>
+                <option value="">--Select--</option>
+                <option value="Yes">1 (Yes)</option>
+                <option value="No">0 (No)</option>
+                <!-- <option value="Poor">Poor</option> -->
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <!-- Question 4 -->
+        <div class="form-group">
+            <label>Is your primary role within your company related to tech/IT?</label>
+            <select name="q4" required>
+                <option value="">--Select--</option>
+                <option value="Yes">1 (Yes)</option>
+                <option value="No">0 (No)</option>
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <!-- Question 5 -->
+        <div class="form-group">
+            <label>Does your employer provide mental health benefits as part of healthcare coverage?</label>
+            <select name="q5" required>
+                <option value="">--Select--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Not eligible for coverage / N/A">Not eligible for coverage / N/A</option>
+                <option value="I don't Know">I don't Know</option>
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+
+        <!-- Question 6 -->
+        <div class="form-group">
+            <label>Do you know the options for mental health care available under your employer-provided coverage?</label>
+            <select name="q6" required>
+                <option value="">--Select--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="I am not sure">I am not sure</option>
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <!-- Question 7 -->
+        <div class="form-group">
+            <label>Has your employer ever formally discussed mental health (for example, as part of a wellness campaign or other official communication)?</label>
+            <select name="q7" required>
+                <option value="">--Select--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="I don't know">I don't know</option>
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <!-- Question 8 -->
+        <div class="form-group">
+            <label>Does your employer offer resources to learn more about mental health concerns and options for seeking help?</label>
+            <select name="q8" required>
+                <option value="">--Select--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="I don't know">I don't know</option>
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <!-- Question 9 -->
+        <div class="form-group">
+            <label>Is your anonymity protected if you choose to take advantage of mental health or substance abuse treatment resources provided by your employer?</label>
+            <select name="q9" required>
+                <option value="">--Select--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="I don't know">I don't know</option>
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <!-- Question 10 -->
+        <div class="form-group">
+            <label>If a mental health issue prompted you to request a medical leave from work, asking for that leave would be:</label>
+            <select name="q10" required>
+                <option value="">--Select--</option>
+                <option value="Very easy">Very easy</option>
+                <option value="Very difficult">Very difficult</option>
+                <option value="Somewhat easy">Somewhat easy</option>
+                <option value="Neither easy nor difficult">Neither easy nor difficult</option>
+                <option value="I don't know">I don't know</option>
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <!-- Question 11 -->
+        <div class="form-group">
+            <label>Do you think that discussing a mental health disorder with your employer would have negative consequences?</label>
+            <select name="q11" required>
+                <option value="">--Select--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Maybe">Maybe</option>
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <!-- Question 12 -->
+        <div class="form-group">
+            <label>Do you think that discussing a physical health issue with your employer would have negative consequences?</label>
+            <select name="q12" required>
+                <option value="">--Select--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Maybe">Maybe</option>
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <!-- Question 13 -->
+        <div class="form-group">
+            <label>Would you feel comfortable discussing a mental health disorder with your coworkers?</label>
+            <select name="q13" required>
+                <option value="">--Select--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Maybe">Maybe</option>
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <!-- Question 14 -->
+        <div class="form-group">
+            <label>Would you feel comfortable discussing a mental health disorder with your direct supervisor(s)?</label>
+            <select name="q14" required>
+                <option value="">--Select--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Maybe">Maybe</option>
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <!-- Question 15 -->
+        <div class="form-group">
+            <label>Do you feel that your employer takes mental health as seriously as physical health?</label>
+            <select name="q15" required>
+                <option value="">--Select--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="I don't know">I don't know</option>
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <!-- Question 16 -->
+        <div class="form-group">
+            <label>Have you heard of or observed negative consequences for co-workers who have been open about mental health issues in your workplace?</label>
+            <select name="q16" required>
+                <option value="">--Select--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <!-- Question 17 -->
+        <div class="form-group">
+            <label>Do you have medical coverage (private insurance or state-provided) which includes treatment of a mental health issues?</label>
+            <select name="q17" required>
+                <option value="">--Select--</option>
+                <option value="Yes">1 (Yes)</option>
+                <option value="NO">0 (No)</option>
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <!-- Question 18 -->
+        <div class="form-group">
+            <label>Do you know local or online resources to seek help for a mental health disorder?</label>
+            <select name="q18" required>
+                <option value="">--Select--</option>
+                <option value="No, I don't know any">No, I don't know any</option>
+                <option value="I know some">I know some</option>
+                <option value="Yes, I know several">Yes, I know several</option>
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <!-- Question 19 -->
+        <div class="form-group">
+            <label>If you have been diagnosed or treated for a mental health disorder, do you ever reveal this to clients or business contacts?</label>
+            <select name="q19" required>
+                <option value="">--Select--</option>
+                <option value="Sometimes, if it comes up">Sometimes, if it comes up</option>
+                <option value="No, because it doesn't matter">No, because it doesn't matter</option>
+                <option value="Not applicable to me">Not applicable to me</option>
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <!-- Question 20 -->
+        <div class="form-group">
+            <label>If you have revealed a mental health issue to a client or business contact, do you believe this has impacted you negatively?</label>
+            <select name="q20" required>
+                <option value="">--Select--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="I'm not sure">I'm not sure</option>
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <!-- Question 21 -->
+        <div class="form-group">
+            <label>If you have been diagnosed or treated for a mental health disorder, do you ever reveal this to coworkers or employees?</label>
+            <select name="q21" required>
+                <option value="">--Select--</option>
+                <option value="Sometimes, if it comes up">Sometimes, if it comes up</option>
+                <option value="No, because it would impact me negatively">No, because it would impact me negatively</option>
+                <option value="Not applicable to me">Not applicable to me</option>
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <!-- Question 22 -->
+        <div class="form-group">
+            <label>If you have revealed a mental health issue to a coworker or employee, do you believe this has impacted you negatively?</label>
+            <select name="q22" required>
+                <option value="">--Select--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="I'm not sure">I'm not sure</option>
+                <option value="Not applicable to me">Not applicable to me</option>
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <!-- Question 23 -->
+        <div class="form-group">
+            <label>Do you believe your productivity is ever affected by a mental health issue?</label>
+            <select name="q23" required>
+                <option value="">--Select--</option>
+                <option value="Yes">Yes</option>
+                <option value="Unsure">Unsure</option>
+                <option value="Not applicable to me">Not applicable to me</option>
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <!-- Question 24 -->
+        <div class="form-group">
+            <label>If yes, what percentage of your work time (time performing primary or secondary job functions) is affected by a mental health issue?</label>
+            <select name="q24" required>
+                <option value="">--Select--</option>
+                <option value="1-25%">1-25%</option>
+                <option value="76-100%">76-100%</option>
+                <option value="26-50%">26-50%</option>
+                <option value="51-75%%">51-75%%</option>
+                
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <!-- Question 25 -->
+        <div class="form-group">
+            <label>Do you have previous employers?</label>
+            <select name="q25" required>
+                <option value="">--Select--</option>
+                <option value="Yes">1 (Yes)</option>
+                <option value="NO">0 (No)</option>
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <!-- Question 26 -->
+        <div class="form-group">
+            <label>Have your previous employers provided mental health benefits?</label>
+            <select name="q26" required>
+                <option value="">--Select--</option>
+                <option value="No, none did">No, none did</option>
+                <option value="Yes, they all did">Yes, they all did</option>
+                <option value="Some did">Some did</option>
+                <option value="I don't know">I don't know</option>
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <!-- Question 27 -->
+        <div class="form-group">
+            <label>Were you aware of the options for mental health care provided by your previous employers?</label>
+            <select name="q27" required>
+                <option value="">--Select--</option>
+                <option value="N/A (not currently aware)">N/A (not currently aware)</option>
+                <option value="I was aware of some">I was aware of some</option>
+                <option value="Yes, I was aware of all of them">Yes, I was aware of all of them</option>
+                <option value="No, I only became aware later">No, I only became aware later</option>
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>15763
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <!-- Question 28 -->
+        <div class="form-group">
+            <label>Did your previous employers ever formally discuss mental health (as part of a wellness campaign or other official communication)?</label>
+            <select name="q28" required>
+                <option value="">--Select--</option>
+                <option value="Some did">Some did</option>
+                <option value="None did">None did</option>
+                
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <div class="form-group">
+            <label>Did your previous employers provide resources to learn more about mental health issues and how to seek help?</label>
+            <select name="q29" required>
+                <option value="">--Select--</option>
+                <option value="Some did">Some did</option>
+                <option value="None did">None did</option>
+                
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <div class="form-group">
+            <label>Was your anonymity protected if you chose to take advantage of mental health or substance abuse treatment resources with previous employers?</label>
+            <select name="q30" required>
+                <option value="">--Select--</option>
+                <option value="I don't know">I don't know</option>
+                <option value="Yes, always">Yes, always</option>
+                <option value="No">No</option>
+                <option value="Sometimes">Sometimes</option>
+                
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <div class="form-group">
+            <label>Do you think that discussing a mental health disorder with previous employers would have negative consequences?</label>
+            <select name="q31" required>
+                <option value="">--Select--</option>
+                <option value="Some of them">Some of them</option>
+                <option value="None of them">None of them</option>
+                <option value="I don't know">I don't know</option>
+                <option value="Yes, all of them">Yes, all of them</option>
+                
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <div class="form-group">
+            <label>Do you think that discussing a physical health issue with previous employers would have negative consequences?</label>
+            <select name="q32" required>
+                <option value="">--Select--</option>
+                <option value="Some of them">Some of them</option>
+                <option value="None of them">None of them</option>
+                <option value="Yes, all of them">Yes, all of them</option>
+                
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <div class="form-group">
+            <label>Would you have been willing to discuss a mental health issue with your previous co-workers?</label>
+            <select name="q33" required>
+                <option value="">--Select--</option>
+                <option value="Some of my previous employers">Some of my previous employers</option>
+                <option value="No, at none of my previous employers">No, at none of my previous employers</option>
+                <option value="Yes, at all of my previous employers">Yes, at all of my previous employers</option>
+                
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <div class="form-group">
+            <label>Would you have been willing to discuss a mental health issue with your direct supervisor(s)?</label>
+            <select name="q34" required>
+                <option value="">--Select--</option>
+                <option value="Some of my previous employers">Some of my previous employers</option>
+                <option value="No, at none of my previous employers">No, at none of my previous employers</option>
+                <option value="Yes, at all of my previous employers">Yes, at all of my previous employers</option>
+                <option value="I don't know">I don't know</option>
+                
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <div class="form-group">
+            <label>Did you feel that your previous employers took mental health as seriously as physical health?</label>
+            <select name="q35" required>
+                <option value="">--Select--</option>
+                <option value="Yes, they all did">Yes, they all did</option>
+                <option value="None did">None did</option>
+                <option value="Some did">Some did</option>
+                <option value="I don't know">I don't know</option>
+                
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <div class="form-group">
+            <label>Did you hear of or observe negative consequences for co-workers with mental health issues in your previous workplaces?</label>
+            <select name="q36" required>
+                <option value="">--Select--</option>
+                <option value="None of them">None of them</option>
+                <option value="Some of them">Some of them</option>
+                <option value="Yes, all of them">Yes, all of them</option>
+                
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <div class="form-group">
+            <label>Would you be willing to bring up a physical health issue with a potential employer in an interview?</label>
+            <select name="q37" required>
+                <option value="">--Select--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Maybe">Maybe</option>
+                
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        
+
+        <div class="form-group">
+            <label>Would you bring up a mental health issue with a potential employer in an interview?</label>
+            <select name="q38" required>
+                <option value="">--Select--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Maybe">Maybe</option>
+                
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <div class="form-group">
+            <label>Do you feel that being identified as a person with a mental health issue would hurt your career?</label>
+            <select name="q39" required>
+                <option value="">--Select--</option>
+                <option value="No, I don't think it would">No, I don't think it would</option>
+                <option value="Yes, I think it would">Yes, I think it would</option>
+                <option value="Yes, it has">Yes, it has</option>
+                <option value="No, it has not">No, it has not</option>
+                <option value="Maybe">Maybe</option>
+                
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <div class="form-group">
+            <label>Do you think that team members/co-workers would view you more negatively if they knew you suffered from a mental health issue?</label>
+            <select name="q40" required>
+                <option value="">--Select--</option>
+                <option value="No, I don't think they would">No, I don't think they would</option>
+                <option value="Yes, they do">Yes, they do</option>
+                <option value="Yes, I think they would">Yes, I think they would</option>
+                <option value="Maybe">Maybe</option>
+                
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <div class="form-group">
+            <label>How willing would you be to share with friends and family that you have a mental illness?</label>
+            <select name="q41" required>
+                <option value="">--Select--</option>
+                <option value="Somewhat open">Somewhat open</option>
+                <option value="Neutral">Neutral</option>
+                <option value="Not applicable to me (I do not have a mental illness)">Not applicable to me (I do not have a mental illness)</option>
+                <option value="Very open">Very open</option>
+                <option value="Not open at all">Not open at all</option>
+                
+                
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <div class="form-group">
+            <label>Have you observed or experienced an unsupportive or badly handled response to a mental health issue in your current or previous workplace?</label>
+            <select name="q42" required>
+                <option value="">--Select--</option>
+                <option value="Yes, I experienced">Yes, I experienced</option>
+                <option value="No">No</option>
+                <option value="Maybe/Not sure">Maybe/Not sure</option>
+                <option value="Yes, I observed">Yes, I observed</option>
+                
+                
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <div class="form-group">
+            <label>Have your observations of how another individual who discussed a mental health disorder made you less likely to reveal a mental health issue yourself in your current workplace?</label>
+            <select name="q43" required>
+                <option value="">--Select--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Maybe">Maybe</option>
+                
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <div class="form-group">
+            <label>Do you have a family history of mental illness?</label>
+            <select name="q44" required>
+                <option value="">--Select--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="I don't know">I don't know</option>
+                
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <div class="form-group">
+            <label>Have you had a mental health disorder in the past?</label>
+            <select name="q45" required>
+                <option value="">--Select--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Maybe">Maybe</option>
+                
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <div class="form-group">
+            <label>Do you currently have a mental health disorder?</label>
+            <select name="q46" required>
+                <option value="">--Select--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Maybe">Maybe</option>
+                
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <div class="form-group">
+            <label>If yes, what condition(s) have you been diagnosed with?</label>
+            <select name="q47" required>
+                <option value="">--Select--</option>
+                <option value="Anxiety Disorder (Generalized, Social, Phobia, etc)|Mood Disorder (Depression, Bipolar Disorder, etc)">Anxiety Disorder (Generalized, Social, Phobia, etc)|Mood Disorder (Depression, Bipolar Disorder, etc)</option>
+                <option value="Mood Disorder (Depression, Bipolar Disorder, etc)">Mood Disorder (Depression, Bipolar Disorder, etc)</option>
+                <option value="Personality Disorder (Borderline, Antisocial, Paranoid, etc)|Attention Deficit Hyperactivity Disorder">Personality Disorder (Borderline, Antisocial, Paranoid, etc)|Attention Deficit Hyperactivity Disorder</option>
+                <option value="Attention Deficit Hyperactivity Disorder|Pervasive Developmental Disorder (Not Otherwise Specified)">Attention Deficit Hyperactivity Disorder|Pervasive Developmental Disorder (Not Otherwise Specified)</option>
+                <option value="Seasonal Affective Disorder">Seasonal Affective Disorder</option>
+                <option value="Autism (Asperger's)">Autism (Asperger's)</option>
+                <option value="Burn out">Burn out</option>
+                <option value="PDD-NOS">PDD-NOS</option>
+                <option value="Post-traumatic Stress Disorder|Dissociative Disorder">Post-traumatic Stress Disorder|Dissociative Disorder</option>
+                
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <div class="form-group">
+            <label>If maybe, what condition(s) do you believe you have?</label>
+            <select name="q48" required>
+                <option value="">--Select--</option>
+                <option value="Substance Use Disorder|Addictive Disorder">Substance Use Disorder|Addictive Disorder</option>
+                <option value="Anxiety Disorder (Generalized, Social, Phobia, etc)|Mood Disorder (Depression, Bipolar Disorder, etc)">Anxiety Disorder (Generalized, Social, Phobia, etc)|Mood Disorder (Depression, Bipolar Disorder, etc)</option>
+                <option value="Mood Disorder (Depression, Bipolar Disorder, etc)|Attention Deficit Hyperactivity Disorder">Mood Disorder (Depression, Bipolar Disorder, etc)|Attention Deficit Hyperactivity Disorder</option>
+                <option value="Obsessive-Compulsive Disorder|Suicidal Ideation">Obsessive-Compulsive Disorder|Suicidal Ideation</option>
+                <option value="Burn out">Burn out</option>
+                <option value="Gender Identity Disorder">Gender Identity Disorder</option>
+                <option value="Stress Response Syndromes|Anxiety Disorder (Generalized, Social, Phobia, etc)">Stress Response Syndromes|Anxiety Disorder (Generalized, Social, Phobia, etc)</option>
+                <option value="Psychotic Disorder (Schizophrenia, Schizoaffective, etc)|Personality Disorder (Borderline, Antisocial, Paranoid, etc)|Stress Response Syndromes">Psychotic Disorder (Schizophrenia, Schizoaffective, etc)|Personality Disorder (Borderline, Antisocial, Paranoid, etc)|Stress Response Syndromes</option>
+                <option value="Addictive Disorder|Substance Use Disorder|Obsessive-Compulsive Disorder|Personality Disorder (Borderline, Antisocial, Paranoid, etc)|Mood Disorder (Depression, Bipolar Disorder, etc)">Addictive Disorder|Substance Use Disorder|Obsessive-Compulsive Disorder|Personality Disorder (Borderline, Antisocial, Paranoid, etc)|Mood Disorder (Depression, Bipolar Disorder, etc)</option>
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <div class="form-group">
+            <label>Have you been diagnosed with a mental health condition by a medical professional?</label>
+            <select name="q49" required>
+                <option value="">--Select--</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <div class="form-group">
+            <label>If so, what condition(s) were you diagnosed with?</label>
+            <select name="q50" required>
+                <option value="">--Select--</option>
+                <option value="Anxiety Disorder (Generalized, Social, Phobia, etc)|Mood Disorder (Depression, Bipolar Disorder, etc)">Anxiety Disorder (Generalized, Social, Phobia, etc)|Mood Disorder (Depression, Bipolar Disorder, etc)</option>
+                <option value="Mood Disorder (Depression, Bipolar Disorder, etc)">Mood Disorder (Depression, Bipolar Disorder, etc)</option>
+                <option value="Personality Disorder (Borderline, Antisocial, Paranoid, etc)|Attention Deficit Hyperactivity Disorder">Personality Disorder (Borderline, Antisocial, Paranoid, etc)|Attention Deficit Hyperactivity Disorder</option>
+                <option value="Attention Deficit Hyperactivity Disorder|Pervasive Developmental Disorder (Not Otherwise Specified)">Attention Deficit Hyperactivity Disorder|Pervasive Developmental Disorder (Not Otherwise Specified)</option>
+                <option value="Seasonal Affective Disorder">Seasonal Affective Disorder</option>
+                <option value="Autism (Asperger's)">Autism (Asperger's)</option>
+                <option value="Burn out">Burn out</option>
+                <option value="PDD-NOS">PDD-NOS</option>
+                <option value="Depression">Depression</option>
+                <option value="Post-traumatic Stress Disorder|Dissociative Disorder">Post-traumatic Stress Disorder|Dissociative Disorder</option>
+                
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <div class="form-group">
+            <label>Have you ever sought treatment for a mental health issue from a mental health professional?</label>
+            <select name="q51" required>
+                <option value="">--Select--</option>
+                <option value="Yes">1 (Yes)</option>
+                <option value="NO">0 (No)</option>
+                
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <div class="form-group">
+            <label>If you have a mental health issue, do you feel that it interferes with your work when being treated effectively?</label>
+            <select name="q52" required>
+                <option value="">--Select--</option>
+                <option value="Not applicable to me">Not applicable to me</option>
+                <option value="Rarely">Rarely</option>
+                <option value="Sometimes">Sometimes</option>
+                <option value="Never">Never</option>
+                <option value="Often">Often</option>
+                
+                
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <div class="form-group">
+            <label for="q53">What is your age?</label>
+            <input type="text" id="q53" name="q53" placeholder="Enter your age" required>
+        </div>
+
+        <div class="form-group">
+            <label>What is your gender?</label>
+            <select name="q54" required>
+                <option value="">--Select--</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>
+
+        <div class="form-group">
+            <label>Which of the following best describes your work position?</label>
+            <select name="q55" required>
+                <option value="">--Select--</option>
+                <option value="Back-end Developer">Back-end Developer</option>
+                <option value="Supervisor/Team Lead">Supervisor/Team Lead</option>
+                <option value="Executive Leadership|Supervisor/Team Lead|Dev Evangelist/Advocate|DevOps/SysAdmin|Support|Back-end Developer|Front-end Developer">Executive Leadership|Supervisor/Team Lead|Dev Evangelist/Advocate|DevOps/SysAdmin|Support|Back-end Developer|Front-end Developer</option>
+                <option value="DevOps/SysAdmin|Support|Back-end Developer|Front-end Developer|Designer">DevOps/SysAdmin|Support|Back-end Developer|Front-end Developer|Designer</option>
+                <option value="Dev Evangelist/Advocate|Back-end Developer">Dev Evangelist/Advocate|Back-end Developer</option>
+                <option value="Support|Back-end Developer|One-person shop">Support|Back-end Developer|One-person shop</option>
+                <option value="One-person shop|Front-end Developer|Back-end Developer">One-person shop|Front-end Developer|Back-end Developer</option>
+                <option value="Front-end Developer">Front-end Developer</option>
+                <option value="Designer">Designer</option>
+                <option value="Other|Executive Leadership">Other|Executive Leadership</option>
+                <option value="Other">Other</option>
+                <option value="Support">Support</option>
+                <option value="HR">HR</option>
+                
+                
+            </select>
+            <!-- <label for="dropdown2">Select your sleep duration:</label>
+            <select id="dropdown2" name="sleep_duration" required>
+                <option value="">--Select--</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="5-7 hours">5-7 hours</option>
+                <option value="More than 7 hours">More than 7 hours</option>
+            </select> -->
+        </div>                            
+        <div class="form-group">
+            <button type="submit" class="submit-btn">Submit</button>
+        </div>
+    </form>
+
+    <div id="result"></div>
+
+   
+    <script>
+    //     function submitForm(event) {
+    //         event.preventDefault();
+
+    //         // Initialize an empty array to hold the feature values
+    //         const features = [];
+
+    //         // Loop through all the question elements and parse their values safely
+    //         for (let i = 1; i <= 55; i++) {
+    //             const element = document.querySelector(`select[name="q${i}"], input[name="q${i}"]`);
+            
+    //             // Check if the element exists
+    //             if (element) {
+    //                 let value = element.value.trim();
+    //                 // Check if value is not empty
+    //                 if (value !== "") {
+    //                     // Ensure that the value is stored as a string
+    //                     features.push(value);
+    //                 } else {
+    //                     console.error(`Value for question q${i} is empty.`);
+    //                 }
+    //             } else {
+    //                 console.error(`Element for question q${i} not found.`);
+    //             }
+    //         }
+    //         console.log(`features: ${features}`);
+
+    //         // Send the data to the server
+    //         fetch('http://127.0.0.1:5000/predict', {
+    //             method: 'POST',
+    //             mode: 'no-cors',
+    //             headers: {
+    //                 'Content-Type': 'application/json',
+    //             },
+    //             body: JSON.stringify({ features: features }),
+    //         })
+    //         .then(response => {
+    //             if (!response.ok) {
+    //                 throw new Error(`HTTP error! status: ${response.status}`);
+    //             }
+    //             return response.json();
+    //         })
+    //         .then(data => {
+    //             const resultElement = document.getElementById('result');
+    //             if (resultElement) {
+    //                 if (data.error) {
+    //                     console.error('Server Error:', data.error);
+    //                     resultElement.innerText = 'An error occurred: ' + data.error;
+    //                 } else {
+    //                     resultElement.innerText = 'Prediction: ' + data.prediction;
+    //                 }
+    //             } else {
+    //                 console.error('Result element not found in the HTML.');
+    //             }
+    //         })
+    //         .catch(error => console.error('Error while fetching:', error));
+    //     }
+    // </script>
+
+</body>
+</html>
