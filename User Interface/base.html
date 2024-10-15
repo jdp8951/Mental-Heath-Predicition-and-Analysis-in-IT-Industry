@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Prediction</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #4b4b7a, #6b6bad);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #2f2f5f;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #bcbcdc;
+            font-size: 16.5px;
+        }
+
+        /* Main Section */
+        .main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 46px 149px;
+            color: #f0f0ff;
+            text-align: center;
+        }
+
+        .main h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .main p {
+            font-size: 1.5rem;
+            margin: 30px 0 50px 0;
+            max-width: 600px;
+            color: #e0e0f7;
+        }
+
+        .main img {
+            width: 300px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .test-button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1rem;
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .test-button:hover {
+            background-color: #ff8b7f;
+            transform: scale(1.05);
+        }
+
+        /* First Section */
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 60px 20px;
+            background-color: #ffffff;
+            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .leftsection {
+            font-size: 1.2rem;
+            margin: 20px;
+            width: 40%;
+            color: #3a3a60;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .rightsection img {
+            width: 300px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        /* Footer Section */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2f2f5f;
+            color: #ccccff;
+            font-size: 0.9rem;
+        }
+        /* How It Works Section */
+        .how-it-works {
+            padding: 60px 20px;
+            background-color: white;
+            text-align: center;
+        }
+
+        .how-it-works h2 {
+            font-size: 2.5rem;
+            color: #6b6bad;
+            margin-bottom: 20px;
+        }
+
+        .steps-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .step-box {
+            width: 200px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .step-box img {
+            width: 60px;
+            margin-bottom: 15px;
+        }
+
+        .step-box h3 {
+            font-size: 1.2rem;
+            color: #6b6bad;
+            margin-bottom: 10px;
+        }
+
+        .step-box p {
+            font-size: 0.9rem;
+            color: #6b6bad;
+        }
+
+        .nextsection{ 
+            margin: 30px 30px;
+            padding: 20px;
+            font-size: 1.5rem;
+            color: white;
+            
+            text-align: center;
+        }
+
+        .nextsection.test-button{ 
+            margin-top: 20px;
+        }
+
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#">Login</a>
+        <a href="#">Signup</a>
+        <a href="#">Rate Us</a>
+        <a href="#">Contact Us</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+        <h1>Invest in Mental Health for a Healthier Mind and Body</h1>
+        <p>Mental health stigma is one of the biggest barriers to people seeking help. Raising awareness, providing education, and encouraging open conversations about mental health can help reduce stigma and support those in need.
+            <br>
+            <span id="element"></span>
+        </p>
+        <br>
+        
+        <img src="/static/images/img3.jpeg" alt="Mental Health Image">
+        <p>"It's okay to not be okay. Just remember that it’s okay to reach out for help."</p>
+        <button class="test-button" onclick="startTest()">Start Mental Health Test</button>
+    </div>
+
+    <!-- First Section -->
+    <section class="firstsection">
+        <div class="leftsection">
+            <p>"You are the one thing in this world, above all other things, that you must never give up on. When I was in middle school, I was struggling with severe anxiety and depression and the help and support I received from my family and a therapist saved my life. Asking for help is the first step. You are more precious to this world than you’ll ever know." — Lili Reinhart</p>
+        </div>
+
+        <div class="rightsection">
+            <img src="/static/images/img4.png" alt="Supportive Illustration">
+        </div>
+    </section>
+
+     <!-- How It Works Section -->
+     <div class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps-container">
+            <div class="step-box">
+                <img src="/static/images/assessment.png" alt="Icon 1">
+                <h3>Step 1</h3>
+                <p>Assess your mental health by taking a short test.</p>
+            </div>
+            <div class="step-box">
+                <img src="/static/images/research.png" alt="Icon 2">
+                <h3>Step 2</h3>
+                <p>Get a detailed analysis of your test results.</p>
+            </div>
+            <div class="step-box">
+                <img src="/static/images/icon_3.png" alt="Icon 3">
+                <h3>Step 3</h3>
+                <p>Receive personalized recommendations.</p>
+            </div>
+            <div class="step-box">
+                <img src="/static/images/icon4.jpg" alt="Icon 4">
+                <h3>Step 4</h3>
+                <p>Access resources to improve your mental well-being.</p>
+            </div>
+            <div class="step-box">
+                <img src="/static/images/img_icon_5.jpg" alt="Icon 5">
+                <h3>Step 5</h3>
+                <p>Connect with mental health professionals if needed.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="nextsection">
+        <p>Our mental health prediction website uses AI to provide accurate, personalized insights for early detection of issues in the tech industry. With a user-friendly design and strict data privacy, it also raises awareness and fosters a supportive community. Scalable and adaptable, the platform stays updated with the latest research, aiming to reduce the stigma around mental well-being in tech.
+            <br>
+            <button class="test-button" onclick="startTest()">Take Assessment Now</button>
+        </p>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        &copy; 2024 Mental Health Prediction Platform. All rights reserved.
+    </div>
+
+    <script>
+        function startTest() {
+            // Redirect to the test form
+            window.location.href = "templates/mentalHealth.html";
+        }
+    </script>
+        
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Sometimes the most productive thing you can do is relax. — Mark Black'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+</html>
